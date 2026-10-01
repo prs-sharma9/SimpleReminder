@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Simple Reminder</string>
+    <string name = "homescreen_title">Reminders</string>
+</resources>
