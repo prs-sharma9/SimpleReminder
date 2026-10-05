@@ -11,6 +11,10 @@ composeBom = "2026.02.01"
 serialization = "2.0.21"
 nav_version = "2.10.2"
 kotlin_serialization = "1.7.3"
+room_verions = "2.8.5"
+ksp_version = "2.3.4"
+hilt = "2.60.1"
+uiTextGoogleFonts = "1.12.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,9 +34,18 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 
 androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "nav_version" }
 jetbrains-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlin_serialization" }
+androidx-room = { group = "androidx.room", name = "room-runtime", version.ref = "room_verions" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room_verions" }
+ksp = { group = "androidx.room", name = "room-compiler", version.ref = "room_verions" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+androidx-compose-ui-text-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-fonts", version.ref = "uiTextGoogleFonts" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "serialization" }
+kotlin-symbol = { id = "com.google.devtools.ksp", version.ref = "ksp_version" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
 

@@ -19,7 +19,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            SimpleReminderTheme {
+            SimpleReminderTheme (
+                dynamicColor = false
+            ) {
                 AppNavigation()
             }
         }
